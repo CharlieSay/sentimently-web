@@ -5,7 +5,7 @@ import Sectionhead from "@components/sectionhead.astro";
 import { Image } from "@astrojs/image/components";
 
 const TeamImg1 =
-  "https://images.unsplash.com/photo-1580489944761-15a19d654956?&fit=crop&w=280";
+  "https://scontent-lcy1-1.xx.fbcdn.net/v/t39.30808-6/312944994_10225712748899538_5047827334043479979_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ot9FkcZsAyMAX9THvql&tn=FhS5LjkXytfZISLv&_nc_ht=scontent-lcy1-1.xx&oh=00_AfAFDH4EAMDgYPt_iyJZzV4c1qlvzVaSf0FY6omiGS9XCg&oe=63AC161C";
 const TeamImg2 =
   "https://images.unsplash.com/photo-1633332755192-727a05c4013d?&fit=crop&w=280";
 const TeamImg3 =
@@ -13,30 +13,12 @@ const TeamImg3 =
 
 const team = [
   {
-    name: "Janette Lynch",
-    title: "Senior Director",
+    name: "Charlie Say",
+    title: "Founder",
     avatar: {
       src: TeamImg1,
       width: 480,
       height: 560,
-    },
-  },
-  {
-    name: "Marcell Ziemann",
-    title: "Principal Strategist",
-    avatar: {
-      src: TeamImg2,
-      width: 580,
-      height: 580,
-    },
-  },
-  {
-    name: "Robert Palmer",
-    title: "Marketing Engineer",
-    avatar: {
-      src: TeamImg3,
-      width: 580,
-      height: 580,
     },
   },
 ];
@@ -59,7 +41,7 @@ const team = [
         the job. This is what makes our team so special.
       </p>
     </div>
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+    <!-- <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       {
         team.map((item) => (
           <div class="group">
@@ -79,6 +61,6 @@ const team = [
           </div>
         ))
       }
-    </div>
+    </div> -->
   </Container>
 </Layout>

@@ -5,7 +5,7 @@ const { title, lastItem, children } = Astro.props;
 <li @click.away="open = false" class="relative" x-data="{ open: false }">
   <button
     @click="open = !open"
-    class="flex items-center gap-1 w-full lg:w-auto lg:px-3 py-2 text-gray-600 hover:text-gray-900">
+    class="flex items-center gap-1 w-full lg:w-auto lg:px-3 py-2 hover:text-gray-900">
     <span>{title}</span>
     <svg
       xmlns="http://www.w3.org/2000/svg"
