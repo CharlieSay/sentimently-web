@@ -2,7 +2,7 @@
 import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
-import "@fontsource/inter/variable.css";
+import "@fontsource/sora/variable.css";
 
 export interface Props {
   title: string;
@@ -59,6 +59,12 @@ const makeTitle = title ? title + " | " + "Sentimently" : "Sentimently";
       /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
       img {
         content-visibility: auto;
+      }
+      * {
+        font-family: "Sora", "Epilogue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
       }
       .mesh-background {
         background-image: url("../assets/mesh.webp");

@@ -3,6 +3,7 @@ import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Pricing from "@components/pricing.astro";
+import Switch from "@components/ui/switch.astro";
 
 const pricing = [
   {
@@ -10,12 +11,11 @@ const pricing = [
     price: "Free",
     popular: false,
     features: [
-      "Lifetime free",
-      "Up to 3 users",
-      "Unlimited Pages",
-      "Astro Sub domain",
-      "Basic Integrations",
+      "Free forever!",
+      "1 User",
       "Community Support",
+      "Reply to 5 reviews a week",
+      "Two channels",
     ],
     button: {
       text: "Get Started",
@@ -25,18 +25,19 @@ const pricing = [
   {
     name: "Premium",
     price: {
-      monthly: "$19",
-      annual: "$16",
-      discount: "10%",
-      original: "$24",
+      monthly: "£30",
+      annual: "£28",
+      discount: "20%",
+      original: "£40",
     },
     popular: true,
     features: [
       "All Free Features",
-      "Up to 20 users",
-      "20 Custom domains",
-      "Unlimited Collaborators",
+      "Updated twice a day",
+      "Up to 3 users",
       "Advanced Integrations",
+      "All channels",
+      "Sentimently™ Rating",
       "Priority Support",
     ],
     button: {
@@ -50,10 +51,8 @@ const pricing = [
     popular: false,
     features: [
       "All Pro Features",
-      "Unlimited Custom domains",
-      "99.99% Uptime SLA",
-      "SAML & SSO Integration",
-      "Dedicated Account Manager",
+      "Unlimited users",
+      "Priority Feature requests",
       "24/7 Phone Support",
     ],
     button: {
@@ -72,7 +71,6 @@ const pricing = [
         >Simple & Predictable pricing. No Surprises.</Fragment
       >
     </Sectionhead>
-
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
       {pricing.map((item) => <Pricing plan={item} />)}
     </div>

@@ -6,7 +6,9 @@ specifiers:
   '@astrojs/mdx': ^0.11.5
   '@astrojs/sitemap': ^1.0.0
   '@astrojs/tailwind': ^2.1.1
+  '@fontsource/epilogue': ^4.5.10
   '@fontsource/inter': ^4.5.14
+  '@fontsource/sora': ^4.5.10
   '@tailwindcss/typography': ^0.5.7
   '@types/alpinejs': ^3.0.0
   alpinejs: ^3.0.0
@@ -22,7 +24,9 @@ dependencies:
   '@astrojs/mdx': 0.11.5
   '@astrojs/sitemap': 1.0.0
   '@astrojs/tailwind': 2.1.1_tailwindcss@3.2.1
+  '@fontsource/epilogue': 4.5.10
   '@fontsource/inter': 4.5.14
+  '@fontsource/sora': 4.5.10
   '@types/alpinejs': 3.7.1
   alpinejs: 3.10.5
   astro: 1.6.2
@@ -491,8 +495,16 @@ packages:
     dev: false
     optional: true
 
+  /@fontsource/epilogue/4.5.10:
+    resolution: {integrity: sha512-EqHRz7CoeTDWXlX07AHi2rLAcqqQag5/B+AssJ22E05slozPhL6oyQpun3fibr7+UsLWmkAqDy4NwhgYYZ0TPQ==}
+    dev: false
+
   /@fontsource/inter/4.5.14:
     resolution: {integrity: sha512-JDC9AocdPLuGsASkvWw9hS5gtHE7K9dOwL98XLrk5yjYqxy4uVnScG58NUvFMJDVJRl/7c8Wnap6PEs+7Zvj1Q==}
+    dev: false
+
+  /@fontsource/sora/4.5.10:
+    resolution: {integrity: sha512-hArmXtMRBOXtvY7DzSr+v0hGvRSrpYXMNOLJK/U0AJjhdS23kir+13ZV79CjwMhwsm8dfIV+YWVGDWEvlUic/w==}
     dev: false
 
   /@jridgewell/gen-mapping/0.1.1:
